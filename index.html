@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html class="no-js">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>RPS-Game</title>
-    <meta name="description" content="">
-    <meta name="viewport" content=
-    "width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <!-- Place favicon.ico in the root directory -->
-</head>
-<body>
+  </head>
+  <body>
     <!--[if lt IE 8]>
-            <p class="browserupgrade">
-            You are using an <strong>outdated</strong> browser. Please
-            <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-            your experience.
-            </p>
-        <![endif]-->
-    <button class="play button">Play</button>
-    <div class="options">
-        <button class="rock button">Rock</button> <button class=
-        "paper button">Paper</button> <button class=
-        "scissor button">Scissors</button>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <div class="grid-container">
+      <div class="top">
+          <button id="play" class="play button">Play</button>
+          <h2>Score</h2>
+      </div>
+      <div class="bottom">
+        <div class="options">
+          <button id="rock">Rock</button>
+          <button id="paper">Paper</button>
+          <button id="scissors">Scissors</button>
+        </div>
+        <div id="result"></div>
+      </div>
     </div>
-</body>
+    <script src="assets/scripts/scripts.js"></script>
+  </body>
 </html>
