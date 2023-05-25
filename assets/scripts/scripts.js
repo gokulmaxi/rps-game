@@ -12,6 +12,7 @@ choices.forEach((choice) => {
 play.addEventListener("click", function () {
   choices.forEach((choice) => {
     choice.disabled = false;
+    choice.classList.remove("disabled")
   });
 });
 

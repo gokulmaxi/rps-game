@@ -20,16 +20,34 @@
     <![endif]-->
     <div class="grid-container">
       <div class="top">
-          <button id="play" class="play button">Play</button>
-          <h2>Score</h2>
+        <div class="scorecard">
+          <div class="score">
+            <h2>Player</h2>
+            <h2>0</h2>
+          </div>
+          <div class="score">
+            <h2>Player</h2>
+            <h2>0</h2>
+          </div>
+        </div>
+        <div class="controlButtons">
+          <button id="play" class="button">Play</button>
+          <button id="play" class="play button">Restart</button>
+        </div>
       </div>
       <div class="bottom">
-        <div class="options">
-          <button id="rock">Rock</button>
-          <button id="paper">Paper</button>
-          <button id="scissors">Scissors</button>
+        <div class="leftBottom">
+          <div>1</div>
+          <img class="systemicon" src="assets/img/rock.png" alt="" />
         </div>
-        <div id="result"></div>
+        <div class="rightBottom">
+          <img class="playericon" src="assets/img/rock.png" alt="" />
+          <div class="options">
+            <button id="rock" class="op">Rock</button>
+            <button id="paper" class="op">Paper</button>
+            <button id="scissors" class="op">Scissors</button>
+          </div>
+        </div>
       </div>
     </div>
     <script src="assets/scripts/scripts.js"></script>
