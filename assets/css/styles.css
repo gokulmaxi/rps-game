@@ -31,17 +31,41 @@
   grid-column: 1;
   display: grid;
   grid-template-rows: 100%;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 20% 30% 30% 20%;
 }
-.rightBottom {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  justify-content: center;
-}
-.leftBottom {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  justify-content: center;
+@media only screen and (max-width: 500px) {
+  .bottom {
+    background-color: #ccc;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  .options {
+    margin-right: 10px;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .playericon {
+    width: 50%;
+    grid-row: 1;
+    grid-column: 2;
+    aspect-ratio: 1/1;
+    justify-self: center;
+    align-self: center;
+    animation: shake 1s infinite;
+  }
+  .systemicon {
+    transform: scaleX(-1);
+    grid-row: 1;
+    grid-column: 1;
+    width: 50%;
+    aspect-ratio: 1/1;
+    justify-self: center;
+    align-self: center;
+    animation: shakeSystem 1s infinite;
+  }
 }
 .options {
   margin-right: 10px;
@@ -115,6 +139,11 @@
   padding-right: 10px;
 }
 .score {
+  margin-left: 10px;
   display: flex;
   flex-direction: row;
+}
+#result {
+  align-self: center;
+  justify-self: center;
 }
